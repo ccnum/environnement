@@ -1,0 +1,150 @@
+/****************************************************************/
+/********* Propriétés spécifiques au site environnement (couleurs et images de fond) *********/
+/****************************************************************/
+
+.couleur {
+	color:#009EE0;
+}
+
+.couleur-claire {
+	color:#bbe7ff;
+}
+
+hr {
+	color: #009EE0;
+	background-color: #009EE0;
+}
+
+.fond-blanc {
+	background-color:#FFFFFF;
+}
+
+.fond-couleur {
+	background-color:#009EE0;
+}
+
+.fond-couleur-claire {
+	background-color:#bbe7ff;
+}
+
+.fond-couleur-gris {
+	background-color:#F2F2F2;
+}
+
+a:hover {
+	color:#009EE0;
+}
+
+a.rollover-fond-couleur:hover {
+	color:#000000;
+}
+
+#header #bandeau #calendrier {
+	background-image:url(../img/fond_calendrier.gif);
+	background-repeat:no-repeat;
+}
+
+#contenu a {
+	background:url(../img/puce-lien.gif) no-repeat;
+}
+
+#contenu a:hover {
+	color:#009EE0;
+	text-decoration:none;
+	background:url(../img/puce-lien-over.gif) no-repeat;
+}
+
+#contenu a.lientexte:hover {
+	color:#009EE0;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+#contenu a.lientexte-sans-souligne:hover {
+	color:#009EE0;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+
+#sous-menu #sous-navigation {
+	background:#009EE0 url(../img/haut-pave-contenu-sous-navigation.gif) no-repeat;
+}
+
+#sous-menu #sous-navigation a {
+	color:#FFFFFF;
+	background:url(../img/puce-lien-sous-navigation.gif) no-repeat;
+}
+
+#sous-menu #sous-navigation a:hover {
+	color:#bbe7ff;
+	background:url(../img/puce-lien-sous-navigation-over.gif) no-repeat;
+}
+
+#lien-fermer a {
+	background:url(../img/puce-lien-fermer.gif) no-repeat;
+}
+
+#lien-fermer a:hover {
+	color:#009EE0;
+	background:url(../img/puce-lien-fermer-over.gif) no-repeat;
+}
+
+
+/********* éléments spécifiques du menu (couleur et images de fond) *********/
+
+#menu {
+	background:url(../img/fond_menu.gif) bottom repeat-x;
+}
+
+#menu ul.niveau1 li.sous-menu a {
+	background:url(../img/puce-lien-menu.gif) no-repeat;
+}
+
+#item1:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item1:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item2:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item2:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item3:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item3:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item4:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item4:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#menu ul.niveau1 ul.niveau2 li {
+	background:url(../img/puce-lien-sous-menu.gif) no-repeat;
+}
+
+
+#menu ul.niveau1 ul.niveau2 li a {
+	color:#009EE0;
+}
+

@@ -1,0 +1,14 @@
+<BOUCLE_contenu_article(ARTICLES){id_article}>
+	[(#REM) Fil d'Ariane ]
+	<div id="petit-poucet"><BOUCLE_rub(RUBRIQUES){id_rubrique}>[(#FIL|=={non}|non)#TITRE][(#FIL|=={non}|oui)<strong>Accueil</strong>]</BOUCLE_rub>[(#FIL|=={non}|non) | <strong>#TITRE</strong>]</div>
+
+	[(#REM) Titre]
+		<h1 class="couleur #EDIT{titre}">#TITRE</h1>
+
+	[(#REM) Contenu]
+		<div class="#EDIT{texte}">[(#TEXTE|image_reduire{340})]</div>
+
+	[(#REM) Gestion du portfolio et des documents ]
+		[(#INCLURE{fond=noisettes/inclure/documents}{id_article})]
+		
+</BOUCLE_contenu_article>

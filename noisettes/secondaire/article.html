@@ -1,0 +1,55 @@
+#FORMULAIRE_RECHERCHE
+
+<BOUCLE_article(ARTICLES){id_article}>
+
+[(#REM)ENS, FORETS ET RIVIERES]
+	<BOUCLE_ENS(ARTICLES){id_article}{id_rubrique IN 5,8,6}>
+		<BOUCLE_liens0(DOCUMENTS){id_article}{extension IN html,pdf}>
+		</BOUCLE_liens0>
+		</B_liens0>
+			<BOUCLE_liens20(DOCUMENTS){id_rubrique}{extension IN html,pdf}>
+			</BOUCLE_liens20>
+			</B_liens20>
+				#SET{txt,à venir}
+			<//B_liens20>
+		<//B_liens0>
+		
+		<div id="secondaire">
+		<div class="bloc">
+			<div class="titre">
+				<h3>
+				[(#ID_RUBRIQUE|!={6}|oui) Groupe de travail[ (#GET{txt})] ]
+				[(#ID_RUBRIQUE|=={6}|oui) Carte[ (#GET{txt})] ]				
+				</h3>
+			</div>
+			<p>
+				[(#LOGO_ARTICLE)<br/>]
+				<BOUCLE_liens(DOCUMENTS){id_article}{extension IN html,pdf}>
+					[(#REM)[(#EXTENSION|=={html}|?{&pcontentonly=O&width=950&height=700&TB_iframe=true})]]
+					<a [(#EXTENSION|=={html}|oui) class="thickbox0" target="_blank" ] href="[(#URL_DOCUMENT)]"  title="[(#TITRE|attribut_html)]">
+					[(#TITRE)]
+					</a><br />
+				</BOUCLE_liens>
+				</B_liens>
+					<BOUCLE_liens2(DOCUMENTS){id_rubrique}{extension IN html,pdf}>
+						<a [(#EXTENSION|=={html}|oui) class="thickbox0" target="_blank" ] href="[(#URL_DOCUMENT)]" title="[(#TITRE|attribut_html)]">
+						[(#TITRE)]
+						</a><br />
+					</BOUCLE_liens2>
+				<//B_liens>
+			</p>
+		</div>
+		</div>
+		<div style="clear: both; "/>
+	</BOUCLE_ENS>
+
+[(#REM)Bascule du PS]
+	[
+		<div class="bloc">
+		<div class="titre"><h3>Compléments</h3></div>
+		<div class="#EDIT{ps}">(#PS)</div>
+		</div>
+	]
+	
+	
+</BOUCLE_article>

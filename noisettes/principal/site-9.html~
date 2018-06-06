@@ -1,0 +1,25 @@
+<BOUCLE_contenu(SITES){id_syndic}>
+	
+	<div id="petit-poucet"><BOUCLE_secteur(RUBRIQUES){id_secteur}{racine}>#TITRE</BOUCLE_secteur> | <BOUCLE_rub(RUBRIQUES){id_rubrique}><BOUCLE_parent(RUBRIQUES){id_enfant}><BOUCLE_grandparent(RUBRIQUES){id_enfant}>#TITRE</BOUCLE_grandparent> | #TITRE</BOUCLE_parent> | <strong>#TITRE</strong></BOUCLE_rub></div>
+
+		<h3><a href="[(#URL_SITE)]" class="spip_out">
+			[<span class="logo_site">(#LOGO_SITE|image_reduire{160,120}|image_masque{masque_logo_site.png})</span>]
+			<BOUCLE_picto(MOTS){id_groupe=2}{id_syndic}>#LOGO_MOT</BOUCLE_picto>
+			#NOM_SITE
+		</a></h3>
+		#FORMULAIRE_NOTATION
+		#DESCRIPTIF
+			[<a href="#site#ID_SYNDIC" class="voir_survol">qui est cet &eacute;diteur ?</a><div class="survol" id="site#ID_SYNDIC">(#SURVOL)</div>]
+		<B_mots>
+		<div class="ressources"><h4>les th&egrave;mes :</h4>
+			<ul class="themes">
+			<BOUCLE_mots(MOTS) {id_groupe=3} {id_syndic} {par titre}{' - '}>
+				<li class="item"><a href="#URL_MOT" rel="tag">#TITRE</a></li>
+			</BOUCLE_mots>
+			</ul>
+
+		</div>
+		</B_mots>
+		
+	
+</BOUCLE_contenu>

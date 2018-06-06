@@ -1,0 +1,14 @@
+<!-- Début footer -->
+    <div id="footer">
+    	<a href="mailto:info@laclasse.com">Contact</a> - <a href="[(#URL_ARTICLE{68}|parametre_url{connect,''})]">Mentions légales</a>
+    	[ - (#SESSION{id_auteur}|oui)<a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a>]
+    	[ - (#SESSION{id_auteur}|non)<a href="[(#URL_PAGE{login}|parametre_url{url,#SELF})]" rel="nofollow" class='login_modal'><:lien_connecter:></a>]
+    	[ - (#AUTORISER{ecrire})<a href="#EVAL{_DIR_RESTREINT_ABS}"><:espace_prive:></a>]    	
+		&nbsp;<a href="http://www.ac-lyon.fr" target="_blank" title="Ouverture dans une nouvelle fenêtre de www.ac-lyon.fr"><img src="#CHEMIN{img/logo-academie.png}" alt="Académie de Lyon"></a>&nbsp;<a href="http://www.laclasse.com" target="_blank" title="Ouverture dans une nouvelle fenêtre de www.laclasse.com"><img src="#CHEMIN{img/logo-laclasse.png}" alt="laclasse.com"></a>&nbsp;<a href="http://www.erasme.org" target="_blank" title="Ouverture dans une nouvelle fenêtre de www.erasme.org"><img src="#CHEMIN{img/logo-erasme.gif}" alt="Centre Erasme"></a>
+    </div>
+<!-- Fin footer -->
+<!-- Début logo rhone -->
+<div id="rhone">
+	<a href="https://www.grandlyon.com/" target="_blank" title="Ouverture dans une nouvelle fenêtre de https://www.grandlyon.com/">[(#CHEMIN{img/logo-grand-lyon-la-metropole.png}||image_reduire{200})]</a>
+</div>
+<!-- Fin logo rhone -->

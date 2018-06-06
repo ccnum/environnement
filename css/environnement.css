@@ -1,0 +1,194 @@
+/****************************************************************/
+/********* Propriétés Liées à SPIP *********/
+/****************************************************************/
+
+.spip_documents_left { margin-right: 20px; }
+.spip_documents_right { margin-left: 20px; }
+.spip_documents { margin-bottom: 20px; }
+
+h2.couleur { clear: both; }
+
+#contenu #principal p { margin-bottom: 20px; }
+#contenu #principal div.descriptif p { margin-bottom: 10px; }
+#contenu #principal div.liste.sites p { margin-bottom: 2px; margin-top: 2px;}
+
+/*pas de puce sur les liens*/
+#contenu #principal ul li a, #contenu #principal ul li a:hover, #principal a.lien_pagination, #principal a.lien_pagination:hover, a#pagination_articles, a#pagination_rubriques, a#pagination_mots, a#pagination_breves, a#pagination_messages, a#pagination_sites, #contenu .spip_documents a, #contenu .spip_documents a:hover, #contenu a.thickbox, #contenu a.thickbox:hover
+{ background:transparent; padding-left: 0px;}
+
+.pagination {float: right;}
+
+.spip_documents_center {text-align: center;}
+
+/*spip_in remplace lientexte et ajout de #footer et #rhone*/
+#contenu a.spip_in, #contenu #footer a, #contenu #rhone a {
+	color:#333333;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+#contenu a.spip_in:hover, #contenu #footer a:hover, #contenu #rhone a:hover {
+	color:#8AB800;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+/*affichage titre bloc secondaire */
+
+.bloc h2 {
+  font-size:12px;
+  padding-bottom:0;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:0;
+}
+
+
+/*descriptif rubrique*/
+.descriptif{
+margin-top: -10px;
+width: 400px; 
+float: left;
+padding-bottom: 35px;
+}
+
+#footer {
+text-align: right;
+}
+
+#footer img {
+text-align: right;
+}
+
+
+/****************************************************************/
+/********* Autres *********/
+/****************************************************************/
+
+iframe {
+	border:none;
+}
+
+
+input.submit {
+padding : 0px 2px;
+}
+
+#item1:hover  ul.niveau2, #item1 li:focus ul.niveau2 { 
+    display:block;
+}
+
+#item2:hover  ul.niveau2, #item2 li:focus ul.niveau2 { 
+    display:block;
+}
+
+
+/****************************************************************/
+/********* Propriétés spécifiques au site environnement (couleurs et images de fond) *********/
+/****************************************************************/
+
+.couleur {
+	color:#8AB800;
+}
+
+.fond-couleur {
+	background-color:#8AB800;
+}
+
+a:hover {
+	color:#8AB800;
+}
+
+#header #bandeau #calendrier {
+	background-image:url(../img/fond_calendrier.gif);
+	background-repeat:no-repeat;
+}
+
+#contenu a {
+	background:url(../img/puce-lien.gif) no-repeat;
+}
+
+#contenu a:hover {
+	color:#8AB800;
+	text-decoration:none;
+	background:url(../img/puce-lien-over.gif) no-repeat;
+}
+
+#contenu a.lientexte:hover {
+	color:#8AB800;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+#lien-fermer a {
+	background:url(../img/puce-lien-fermer.gif) no-repeat;
+}
+
+#lien-fermer a:hover {
+	color:#8AB800;
+	background:url(../img/puce-lien-fermer-over.gif) no-repeat;
+}
+
+
+/********* éléments spécifiques du menu (couleur et images de fond) *********/
+
+#menu {
+	background:url(../img/fond_menu.gif) bottom repeat-x;
+}
+
+#menu ul.niveau1 li.sous-menu a {
+	background:url(../img/puce-lien-menu.gif) no-repeat;
+	cursor:default;
+}
+
+#item1:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item1:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item2:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item2:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item3:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item3:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#item4:hover {
+	background-color:#6F8E00;
+	background:url(../img/fond-over-menu1.png) no-repeat;
+}
+
+#item4:hover  ul.niveau2 { 
+	background:url(../img/fond-over-menu2.png) bottom no-repeat;
+}
+
+#menu ul.niveau1 ul.niveau2 li {
+	background:url(../img/puce-lien-sous-menu.gif) no-repeat;
+}
+
+
+#menu ul.niveau1 ul.niveau2 li a {
+	color:#8AB800;
+	cursor:pointer;
+}
+
+
+

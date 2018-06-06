@@ -1,0 +1,9 @@
+<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+<form action="[(#ENV{action})]" method="get"><div>
+	[(#ENV{action}|form_hidden)]
+	[<input type="hidden" name="lang" value="(#ENV{lang})" />]
+	<input type="text" class="text" size="18" name="recherche" title="Rechercher" id="recherche" onFocus="if (this.value=='Rechercher') {this.value=''}" [ value="(#ENV{recherche}|sinon{Rechercher})"] accesskey="4" />
+	<input type="submit" class="submit" value="OK" title="OK" />
+</div></form>
+</div>
+<br />

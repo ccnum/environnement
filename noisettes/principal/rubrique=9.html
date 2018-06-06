@@ -1,0 +1,27 @@
+<BOUCLE_contenu(RUBRIQUES){id_rubrique}>
+	[(#REM) Fil d'Ariane ]
+	<div id="petit-poucet"><BOUCLE_rub(RUBRIQUES){id_rubrique}><BOUCLE_parent(RUBRIQUES){id_enfant}>#TITRE</BOUCLE_parent> | <strong>#TITRE</strong></BOUCLE_rub></div>
+
+	[(#REM) Titre]
+		<h1 class="couleur #EDIT{titre}">#TITRE</h1>
+		<BOUCLE_menu_logos(MOTS){id_rubrique}>
+			[(#ID_MOT|=={46}|oui) <INCLURE{fond=noisettes/inclure/energie/logos_themes,id_rubrique}>]
+		</BOUCLE_menu_logos>
+
+	[(#REM) Contenu]
+		<div class="#EDIT{texte} chapo">#TEXTE</div>
+	
+	[(#REM) Sites de la rubrique - mis en commentaire]
+	<B_sites>
+	<div class="liste sites">
+		<ul class="liste-items">
+			<BOUCLE_sites(SITES0?) {branche} {notation} {!par moyenne} {0,10}>
+
+			<INCLURE{fond=noisettes/inclure/energie/ressource,id_syndic}>
+
+			</BOUCLE_sites>
+		</ul>
+	</div>
+	</B_sites>
+	
+</BOUCLE_contenu>

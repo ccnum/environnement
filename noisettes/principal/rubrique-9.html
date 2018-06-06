@@ -1,0 +1,25 @@
+<BOUCLE_contenu(RUBRIQUES){id_rubrique}>
+
+	[(#REM) Fil d'Ariane ]
+		<div id="petit-poucet"><BOUCLE_secteur(RUBRIQUES){id_secteur}{racine}>#TITRE</BOUCLE_secteur> | <BOUCLE_parent(RUBRIQUES){id_enfant}><BOUCLE_grandparent(RUBRIQUES){id_enfant}>#TITRE</BOUCLE_grandparent> | #TITRE</BOUCLE_parent> | <strong>#TITRE</strong></div>
+
+	[(#REM) Titre]
+		<h1 class="couleur #EDIT{titre}">[(#LOGO_RUBRIQUE|image_masque{masque_logo_rubrique.png})]#TITRE</h1>
+
+	[(#REM) Contenu]
+		[<div class="#EDIT{texte} descriptif">(#TEXTE)</div>
+		<hr />
+		]
+	 	
+	[(#REM) Sites de la rubrique ]
+		<B_sites>
+		<div class="liste sites">
+		<ul class="liste-items">
+			<BOUCLE_sites(SITES) {branche} {par nom_site}>
+				<INCLURE{fond=noisettes/inclure/energie/ressource,id_syndic}>
+			</BOUCLE_sites>
+		</ul>
+		</div>
+		</B_sites>
+
+</BOUCLE_contenu>

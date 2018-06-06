@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document sans nom</title>
+<script src="#CHEMIN{js/swfobject.js}" type="text/javascript"></script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+
+<body>
+
+<script type="text/javascript">
+        var flashvars = {};
+        var params= {flashvars:'cheminSwf=#CHEMIN{swf/environnement-dechets.xml}'};
+        params.wmode = "transparent";
+        swfobject.embedSWF("#CHEMIN{swf/environnement-jeu-dechets.swf}", "zone_flash", "950", "550", "9", "", flashvars,params);
+    </script>
+    
+    <div id="zone_flash">Pour pouvoir jouer à ce jeu, le plugin flash doit être installé sur votre ordinateur.<br />Si ce n'est pas le cas, vous pouvez le télécharger gratuitement <a href="http://get.adobe.com/fr/flashplayer/" target="_blank">en cliquant ici</a>.</div>
+
+</body>
+</html>

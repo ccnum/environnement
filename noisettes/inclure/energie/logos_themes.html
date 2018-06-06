@@ -1,0 +1,17 @@
+<div class="logosthemes">
+		<BOUCLE_logorub(RUBRIQUES){id_parent}>
+			<script>
+			$(document).ready(function() {
+				// reaction au survol des vignettes dans contenu page accueil rubrique=9 */
+				$('a.logo#ID_RUBRIQUE').hover(function(){
+					$('.menu#ID_RUBRIQUE ul.sousdossier').stop().animate({height:'120px'},200).addClass('ouvert').removeClass('clos');
+					$('.menu#ID_RUBRIQUE').siblings('li').children('div').children('ul.ouvert').stop().animate({height:'0'},200).addClass('clos').removeClass('ouvert');
+				},function(){
+					
+				})
+			});
+			</script>
+			[<a href="#URL_RUBRIQUE" class="logo#ID_RUBRIQUE" title="#TITRE">(#LOGO_RUBRIQUE|image_masque{masque_logo_rubrique.png})</a>]
+			
+		</BOUCLE_logorub>
+		</div>

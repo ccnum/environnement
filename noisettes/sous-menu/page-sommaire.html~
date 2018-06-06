@@ -1,0 +1,15 @@
+<div class="bloc">
+	<div class="pub">
+		<INCLURE{fond=noisettes/inclure/pub}>
+	</div>
+</div>
+<!--<div class="bloc">
+<div class="titre">
+  <h3>Tendances laclasse depuis sept. 2008...</h3>
+  </div>
+<h4><span class="couleur"><strong>Connectés&nbsp;</strong></span>
+10<br />
+<span class="couleur"><strong>Comptes actifs&nbsp;</strong></span>
+21521</h4>
+</div>-->
+

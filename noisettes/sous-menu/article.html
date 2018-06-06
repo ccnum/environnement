@@ -1,0 +1,86 @@
+<BOUCLE_article(ARTICLES){id_article}>
+
+[(#REM)ENS]
+	<BOUCLE_ENS(CONDITION){si #ID_ARTICLE|=={4}|ou{#ID_RUBRIQUE|=={5}}}>
+		<div class="bloc"> 
+		<div class="titre"> 
+		  <h3>Découvrez les Espaces naturels sensibles</h3> 
+		  </div> 
+		<div class="contenu-special"> 
+			<form name="redirect" action=""> 
+			<select name="ens" id="ens" onChange="javascript:window.location.href=document.redirect.ens.value" style="width:160px"> 
+				<option value="">Liste des ENS</option> 
+				<BOUCLE_art_ens(ARTICLES){id_rubrique=5}>
+					<option value="#URL_ARTICLE" [(#EXPOSE|=={on}|oui) selected="selected"]>[(#TITRE|couper{80}|attribut_html)]</option>
+				</BOUCLE_art_ens>
+			</select>
+			</form>
+			[(#ID_ARTICLE|!={4}|oui)<br /><a href="[(#URL_ARTICLE{4}|parametre_url{connect,''})]">Retour à la carte générale</a>]
+		</div> 
+		</div>
+		#SET{menu,1}
+	</BOUCLE_ENS>
+	
+[(#REM)FORETS]
+	<BOUCLE_FORETS(CONDITION){si #ID_ARTICLE|=={5}|ou{#ID_RUBRIQUE|=={8}}}>
+		<div class="bloc"> 
+    	<div class="titre"> 
+    	  	<h3>Découvrez les Forêts<br /> 
+    	      Départementales</h3> 
+    	  </div> 
+              <div class="contenu-special"> 
+                  <form name="redirect2" action=""> 
+                  <select name="foret" id="foret" onChange="javascript:window.location.href=document.redirect2.foret.value" style="width:160px"> 
+                      <option value="">Liste des forêts</option> 
+						<BOUCLE_art_forets(ARTICLES){id_rubrique=8}>
+						<option value="#URL_ARTICLE" [(#EXPOSE|=={on}|oui) selected="selected"]>[(#TITRE|couper{80}|attribut_html)]</option>
+						</BOUCLE_art_forets>
+                      </select> 
+                      </form>
+			[(#ID_ARTICLE|!={5}|oui)<br /><a href="[(#URL_ARTICLE{4}|parametre_url{connect,''})]">Retour à la carte générale</a>]
+       	  </div> 
+		</div>
+		#SET{menu,1}
+	</BOUCLE_FORETS>
+	
+[(#REM)EAU]
+	<BOUCLE_EAU(CONDITION){si #ID_ARTICLE|=={2}|ou{#ID_RUBRIQUE|=={6}}}>
+		<div class="bloc"> 
+              <div class="titre"> 
+                <h3>Qualité des rivières<br /> 
+                dans le Rhône</h3> 
+        	  </div> 
+              <div class="contenu-special"> 
+                  <form name="redirect3" id="redirect3" action=""> 
+                  <select name="riviere" id="riviere" onChange="javascript:window.location.href=document.redirect3.riviere.value" style="width:160px"> 
+                      <option value="">Liste des rivières</option> 
+						<BOUCLE_art_eau(ARTICLES){id_rubrique=6}>
+						<option value="#URL_ARTICLE" [(#EXPOSE|=={on}|oui) selected="selected"]>[(#TITRE|couper{80}|attribut_html)]</option>
+						</BOUCLE_art_eau>
+                     </select> 
+                     </form>
+					[(#ID_ARTICLE|!={2}|oui)<br /><a href="[(#URL_ARTICLE{2}|parametre_url{connect,''})]">Retour à la carte générale</a>]                      
+               </div> 
+      	</div> 
+        <div class="bloc"> 
+           	  <div class="titre"> 
+           	    <h3>Glossaire</h3> 
+           	  </div> 
+              <div class="contenu-special"> 
+                <a href="[(#URL_ARTICLE{13}|parametre_url{connect,''})]">Accéder au lexique<br /> 
+                des termes
+                </a>          
+          	</div> 
+         </div>
+		#SET{menu,1}         
+	</BOUCLE_EAU>
+	
+[(#GET{menu}|=={1}|non)
+<div class="bloc">
+	<div class="pub">
+		<INCLURE{fond=noisettes/inclure/pub_evt}>
+	</div>
+</div>	
+]
+	
+</BOUCLE_article>

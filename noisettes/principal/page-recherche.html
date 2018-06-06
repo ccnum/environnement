@@ -1,0 +1,97 @@
+	[(#REM) Fil d'Ariane ]
+	<div id="petit-poucet">Recherche | <strong>#RECHERCHE</strong></div>
+
+	[(#REM) Titre]
+		<h1 class="couleur"><:resultats_recherche:>&#171;&nbsp;#RECHERCHE&nbsp;&#187;</h1>
+
+	[(#REM) Contenu]
+		[(#REM) Articles trouves ]
+		<B_articles>
+		<div class="">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:articles:> (#GRAND_TOTAL)</h2>
+			<ul class="niveau1">
+				<BOUCLE_articles(ARTICLES) {recherche} {par points}{inverse} {pagination}>
+				<li><a href="#URL_ARTICLE">
+				<BOUCLE_rub(HIERARCHIE){id_rubrique}{0,1}>[ (#TITRE) > ]</BOUCLE_rub></B_rub><BOUCLE_self(RUBRIQUES){id_rubrique}>[ (#TITRE) > ]</BOUCLE_self><//B_rub>
+				<strong>#TITRE</strong>
+				</a></li>
+				</BOUCLE_articles>
+			</ul>
+		</div>
+		</B_articles>
+		
+		[(#REM) Rubriques trouvees ]
+		<B_rubriques>
+		<div class="">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:rubriques:> (#GRAND_TOTAL)</h2>
+			<ul>
+				<BOUCLE_rubriques(RUBRIQUES) {recherche} {par points}{inverse} {pagination 5}>
+				<li><a href="#URL_RUBRIQUE">
+				<BOUCLE_rub1(HIERARCHIE){id_rubrique}{0,1}>[ (#TITRE) > ]</BOUCLE_rub1></B_rub1><BOUCLE_self1(RUBRIQUES){id_rubrique}>[ (#TITRE) > ]</BOUCLE_self1><//B_rub1>
+				<strong>#TITRE</strong>
+				</a></li>
+				</BOUCLE_rubriques>
+			</ul>
+		</div>
+		</B_rubriques>
+		
+		[(#REM) Mots-cles trouves ]
+		<B_mots>
+		<div class="menu">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:mots_clefs:> (#GRAND_TOTAL)</h2>
+			<ul>
+				<BOUCLE_mots(MOTS) {recherche} {par points}{inverse} {pagination 5}>
+				<li><a href="#URL_MOT"><strong>#TITRE</strong></a></li>
+				</BOUCLE_mots>
+			</ul>
+		</div>
+		</B_mots>
+		
+		[(#REM) Breves trouvees ]
+		<B_breves>
+		<div class="menu">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:breves:> (#GRAND_TOTAL)</h2>
+			<ul>
+				<BOUCLE_breves(BREVES) {recherche} {par points}{inverse} {pagination 5}>
+				<li><a href="#URL_BREVE"><strong>#TITRE</strong></a></li>
+				</BOUCLE_breves>
+			</ul>
+		</div>
+		</B_breves>
+		
+		[(#REM) Messages trouves ]
+		<B_messages>
+		<div class="menu">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:messages_forum:> (#GRAND_TOTAL)</h2>
+			<ul>
+				<BOUCLE_messages(FORUMS) {recherche} {par points}{inverse} {pagination 5}>
+				<li><a href="#URL_FORUM"[ title="(#TITRE|attribut_html|couper{80})"]>[(#TEXTE|couper{80})]</a></li>
+				</BOUCLE_messages>
+			</ul>
+		</div>
+		</B_messages>
+		
+		[(#REM) Sites web trouves ]
+		<B_sites>
+		<div class="menu">
+			#ANCRE_PAGINATION
+			[<p class="pagination">(#PAGINATION)</p>]
+			<h2><:sites_web:> (#GRAND_TOTAL)</h2>
+			<ul>
+				<BOUCLE_sites(SITES) {recherche} {par points}{inverse} {pagination 5}>
+				<li><a href="[(#ID_SYNDIC|generer_url_entite{site,'','',#CONNECT})]"><strong>#NOM_SITE</strong></a></li>
+				</BOUCLE_sites>
+			</ul>
+		</div>
+		</B_sites>
+

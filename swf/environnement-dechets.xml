@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<general>
+
+	<dechets>
+	
+		<dechet>
+			<id>aerosol</id>
+			<nom>Aérosol</nom>
+			<image>img/aerosol.jpg</image>
+			<texte>Selon la dangerosité des matières qu’il contenait, un générateur d’aérosols est à mettre dans la poubelle de tri sélectif ou bien porté à la déchèterie. 
+			</texte>
+			<fiche>http://environnement.laclasse.com/Generateur-d-aerosols</fiche>
+			<poubelle-correspondante1>1</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>ampoule-basse-consommation</id>
+			<nom>Ampoule basse consommation</nom>
+			<image>img/ampoule-basse-consommation.jpg</image>
+			<texte>Les ampoules fluocompactes usagées sont des déchets dangereux, à déposer dans des points de collecte installés dans les magasins et les déchèteries. Leurs composants seront ensuite recyclés ou neutralisés via une filière spécifique.</texte>
+			<fiche>http://environnement.laclasse.com/Ampoule-basse-consommation-ou</fiche>
+			<poubelle-correspondante1>1</poubelle-correspondante1>
+			<poubelle-correspondante2>2</poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>ampoule-classique</id>
+			<nom>Ampoule classique</nom>
+			<image>img/ampoule-classique.jpg</image>
+			<texte>L&#x2019;ampoule à incandescence et l&#x2019;ampoule halogène (qui renferme des gaz halogénés comme l&#x2019;iode et le brome) ne contiennent pas de quantités significatives de substances classées comme dangereuses. Ces ampoules sont énergivores et ne sont pas recyclables. Les ampoules classiques ne contiennent quasiment pas de substances classées comme dangereuses et ne se recyclent pas. </texte>
+			<fiche>http://environnement.laclasse.com/Ampoule-classique-ou-halogene</fiche>
+			<poubelle-correspondante1>3</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>ampoule-halogene</id>
+			<nom>Ampoule halogène</nom>
+			<image>img/ampoule-halogene.jpg</image>
+			<texte>L&#x2019;ampoule à incandescence et l&#x2019;ampoule halogène (qui renferme des gaz halogénés comme l&#x2019;iode et le brome) ne contiennent pas de quantités significatives de substances classées comme dangereuses. Ces ampoules sont énergivores et ne sont pas recyclables. Les ampoules classiques ne contiennent quasiment pas de substances classées comme dangereuses et ne se recyclent pas.</texte>
+			<fiche>http://environnement.laclasse.com/Ampoule-classique-ou-halogene</fiche>
+			<poubelle-correspondante1>3</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>annuaire</id>
+			<nom>Annuaire</nom>
+			<image>img/annuaire.jpg</image>
+			<texte>Les journaux-magazines et les autres papiers collectés font partie des déchets recyclables dits «propres et secs » : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Annuaire</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>appareils-electomenagers</id>
+			<nom>Appareils électroménagers</nom>
+			<image>img/appareils-electomenagers.jpg</image>
+			<texte>Les appareils électroménagers appartiennent à la famille des Déchets d&#x2019;Équipements Électriques et Électroniques (D3E). Des recycleries / ressourceries et des associations caritatives proposent de reprendre les appareils réemployables. Une fois réparés, ils peuvent être réutilisés, ce qui évite la production de déchets.</texte>
+			<fiche>http://environnement.laclasse.com/Appareils-electromenagers</fiche>
+			<poubelle-correspondante1>1</poubelle-correspondante1>
+			<poubelle-correspondante2>2</poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>baril-lessive-en-carton</id>
+			<nom>Baril lessive en carton</nom>
+			<image>img/baril-lessive-en-carton.jpg</image>
+			<texte>Les emballages en carton font partie des déchets recyclables dits «propres et secs» : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Baril-lessive-boite-a-oeufs-en</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>barquette-aluminium</id>
+			<nom>Barquette aluminium</nom>
+			<image>img/barquette-aluminium.jpg</image>
+			<texte>Les barquettes aluminium font partie des déchets recyclables dits « propres et secs » : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation</texte>
+			<fiche>http://environnement.laclasse.com/Barquette-aluminium</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>barquette-en-plastique</id>
+			<nom>Barquette en plastique</nom>
+			<image>img/barquette-en-plastique.jpg</image>
+			<texte>Tous les déchets en matière plastique issus des ménages ne bénéficient pas encore de filière de recyclage. C’est le cas pour les emballages en polystyrène expansé même si des solutions sont testées pour valoriser le plus de matériau possible.</texte>
+			<fiche>http://environnement.laclasse.com/Barquettes-en-plastique</fiche>
+			<poubelle-correspondante1>3</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>barquette-en-polystyrene</id>
+			<nom>Barquette en polystyrène</nom>
+			<image>img/barquette-en-polystyrene.jpg</image>
+			<texte>Tous les déchets en matière plastique issus des ménages ne bénéficient pas encore de filière de recyclage. C’est le cas pour les emballages en polystyrène expansé même si des solutions sont testées pour valoriser le plus de matériau possible.</texte>
+			<fiche>http://environnement.laclasse.com/Barquette-en-Polystyrene-Expanse</fiche>
+			<poubelle-correspondante1>3</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>huile-de-moteur-de-mobylette</id>
+			<nom>Huile de moteur de mobylette</nom>
+			<image>img/huile-de-moteur-de-mobylette.jpg</image>
+			<texte>Les emballages souillés par des produits dangereux présentent les mêmes risques que les produits qu’ils ont contenus. Ils peuvent donc générer les mêmes risques sanitaires et environnementaux. Ils doivent être regroupés et stockés de manière à ne pas provoquer de pollutions.</texte>
+			<fiche>http://environnement.laclasse.com/Huile-de-moteur</fiche>
+			<poubelle-correspondante1>1</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>bocal-en-verre</id>
+			<nom>Bocal en verre</nom>
+			<image>img/bocal-en-verre.jpg</image>
+			<texte>Les emballages en verre (bouteille, bocal, pot, flacon) collectés dans les bacs ou les conteneurs sont recyclés à 100%. 37 974 tonnes de verre ont été collectées dans le Rhône en 2010, soit 22,4 kg par habitant desservi. Le verre est récupéré dans des conteneurs spécifiques en apport volontaire ou bien dans des bacs mis à disposition pour la collecte en porte à porte.</texte>
+			<fiche>http://environnement.laclasse.com/Bouteille-ou-Bocal-en-verre</fiche>
+			<poubelle-correspondante1>5</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>boite-de-conserve</id>
+			<nom>Boite de conserve</nom>
+			<image>img/boite-de-conserve.jpg</image>
+			<texte>Les emballages métalliques font partie des déchets recyclables dits «propres et secs» : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Boite-de-conserve-ou-Bombe-de</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>bombe-de-peinture</id>
+			<nom>Bombe de peinture</nom>
+			<image>img/bombe-de-peinture.jpg</image>
+			<texte>Les emballages souillés par des produits dangereux présentent les mêmes risques que les produits qu’ils ont contenus. Ils peuvent donc générer les mêmes risques sanitaires et environnementaux. Ils doivent être regroupés et stockés de manière à ne pas provoquer de pollutions.</texte>
+			<fiche>http://environnement.laclasse.com/Bombe-de-peinture</fiche>
+			<poubelle-correspondante1>1</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>boite-a-oeuf-en-carton</id>
+			<nom>Boîte à oeuf en carton</nom>
+			<image>img/boite-a-oeuf-en-carton.jpg</image>
+			<texte>Les emballages en carton font partie des déchets recyclables dits « propres et secs » : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Baril-lessive-boite-a-oeufs-en</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>bombe-de-mousse-a-raser</id>
+			<nom>Bombe de mousse à raser</nom>
+			<image>img/bombe-de-mousse-a-raser.jpg</image>
+			<texte>Les emballages métalliques font partie des déchets recyclables dits «propres et secs» : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Boite-de-conserve-ou-Bombe-de</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>bouteille-en-plastique-shampoing</id>
+			<nom>Bouteille en plastique</nom>
+			<image>img/bouteille-en-plastique-shampoing.jpg</image>
+			<texte>Les bouteilles en plastique font partie des déchets recyclables dits «propres et secs» : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Bouteille-en-plastique</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>bouteille-en-verre-jus-de-fruit-huile</id>
+			<nom>Bouteille en verre</nom>
+			<image>img/bouteille-en-verre-jus-de-fruit-huile.jpg</image>
+			<texte>Les emballages en verre (bouteille, bocal, pot, flacon) collectés dans les bacs ou les conteneurs sont recyclés à 100%. 37 974 tonnes de verre ont été collectées dans le Rhône en 2010, soit 22,4 kg par habitant desservi. Le verre est récupéré dans des conteneurs spécifiques en apport volontaire ou bien dans des bacs mis à disposition pour la collecte en porte à porte.</texte>
+			<fiche>http://environnement.laclasse.com/Bouteille-ou-Bocal-en-verre</fiche>
+			<poubelle-correspondante1>5</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+		<dechet>
+			<id>brique-alimentaire-soupe-jus-de-fruit</id>
+			<nom>Brique alimentaire</nom>
+			<image>img/brique-alimentaire-soupe-jus-de-fruit.jpg</image>
+			<texte>Les briques alimentaires font partie des déchets recyclables dits « propres et secs » : 82 065 tonnes de déchets propres et secs ont été collectées dans le Rhône en 2010. Cinq centres de tri, dont ceux de Saint-Fons et Rillieux-la-Pape, accueillent les déchets : des machines et des hommes séparent ensuite les matériaux en fonction des filières de valorisation.</texte>
+			<fiche>http://environnement.laclasse.com/Brique-alimentaire</fiche>
+			<poubelle-correspondante1>4</poubelle-correspondante1>
+			<poubelle-correspondante2></poubelle-correspondante2>
+			<poubelle-correspondante3></poubelle-correspondante3>
+		</dechet>
+	
+	</dechets>
+	
+	<poubelles>
+	
+		<poubelle>
+			<id>1</id>
+			<nom>Déchèterie / Recyclerie</nom>
+			<image>img/decheterie-recyclerie.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>2</id>
+			<nom>Magasins / Points de vente</nom>
+			<image>img/quincaillerie.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>3</id>
+			<nom>Poubelle des déchets ménagers</nom>
+			<image>img/poubelle-des-dechets-menagers.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>4</id>
+			<nom>Poubelle de tri sélectif</nom>
+			<image>img/poubelle-de-tri-selectif.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>5</id>
+			<nom>Conteneur spécial verre</nom>
+			<image>img/conteneur-special-verre.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>6</id>
+			<nom>Associations caritatives</nom>
+			<image>img/associations-caritatives.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+		<poubelle>
+			<id>7</id>
+			<nom>Compostage</nom>
+			<image>img/compostage.jpg</image>
+			<texte></texte>
+			<fiche></fiche>
+		</poubelle>
+	
+	</poubelles>
+
+</general>

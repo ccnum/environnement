@@ -1,0 +1,69 @@
+
+<!--style pour le dossier thematique du secteur energie -->
+<link href="#CHEMIN{css/energie.css}" rel="stylesheet" type="text/css" />
+
+<!-- jScrollpane pour mettre en forme les ascenseurs colonne droite = #secondaire -->
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jquery.dimensions.min.js}"></script>
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jquery.mousewheel.min.js}"></script>
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jScrollPane.js}"></script>
+<link rel="stylesheet" href="#CHEMIN{css/jscrollpane/jScrollPane.css}" type="text/css" media="screen" />
+
+<script>
+$(document).ready(function() {
+
+	$('#contenu #sous-menu li ul a').css({opacity:'0.7'});
+	$('#contenu #sous-menu li ul a.on').css({opacity:'1'});
+	$('#contenu #sous-menu li ul a').hover(function(){
+		$(this).animate({opacity:'1'},200);
+	},function(){
+		$(this).animate({opacity:'0.7'},200);
+	});
+	$('#contenu #sous-menu li ul a.on').hover(function(){
+		$(this).animate({opacity:'1'});
+	},function(){
+		$(this).animate({opacity:'1'});
+	});
+
+	$('a.spip_out, a.info_lien_ext, a.pop').attr("title","ouvre une nouvelle fenêtre").click( function() {
+		window.open( $(this).attr('href') );
+		return false;
+	});
+
+	// jScrollpane = ascenseur customiser
+	$('#secondaire ul').css({ width:'195px' , marginRight:'-20px'}); // pour ascenseur jscrollpane bien en place
+	$(function() {
+		$('#secondaire ul').jScrollPane({
+			showArrows:true
+		});
+	});
+
+	// ouverture/fermeture des blocs du sous-menu
+	$('ul.sousdossier').css({height:'0',display:'none'});
+	$('a.dossier').hover(function(){
+
+		if($(this).siblings('div').children('ul.clos').length > 0){
+			$(this).siblings('div').children('ul.sousdossier').stop().css({display:'block'}).animate({height:'120px'},200).addClass('ouvert').removeClass('clos');
+			$(this).parent().siblings('li').children('div').children('ul.ouvert').stop().animate({height:'0'},200,function(){ $(this).css({display:'none'}); }).addClass('clos').removeClass('ouvert');
+			return false;
+		};
+	},function(){
+	});
+
+	// liste par theme à droite
+	$('.liste.motstexte').animate({opacity:'0.6'}).css({height:'80px'});
+	$('.liste.motstexte').hover(function(){
+		$(this).css({height:'auto'}).animate({opacity:'1'},200);
+	},function(){
+		$(this).animate({opacity:'0.6'},200).css({height:'80px'});
+	});
+
+
+	// le texte au survol
+	$('a.voir_survol').click(function(){
+		$(this).toggleClass('ouvert');
+		$(this).siblings('.survol').slideToggle(200);
+		return false;
+	});
+
+});
+</script>

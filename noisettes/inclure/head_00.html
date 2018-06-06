@@ -1,0 +1,88 @@
+<title>[(#NOM_SITE_SPIP|textebrut)][ - (#TITRE|textebrut)]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<META NAME="Author" CONTENT="Centre Erasme">
+<META NAME="Language" CONTENT="fr">
+<META NAME="Description" CONTENT="Environnement.laclasse.com, Site de ressources culturelles et éducatives du département du Rhône">
+<META NAME="Keywords" CONTENT="espaces naturels sensibles, taxe départementale des espaces naturels sensibles, éducation à l'environnement, observation de la faune et de la flore, domaine forestier départemental, patrimoine forestier, éco-certification, label PEFC, pin Douglas, tempêtes de 1999">
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+[(#REM)Ajout Erasme]
+<meta http-equiv="Content-Type" content="text/html; charset=#CHARSET" />
+<meta name="generator" content="SPIP[ (#SPIP_VERSION)]" />
+[<link rel="alternate" type="application/rss+xml" title="<:syndiquer_site:>" href="(#URL_PAGE{backend})" />]
+#INSERT_HEAD_CSS
+[(#REM)Fin Ajout Erasme]
+
+<!-- Feuilles de style : 1 générale à laclasse, 1 particulière au site en cours, 1 pour le fonctionnement de lightbox -->
+<link href="#CHEMIN{css/laclasse.css}" rel="stylesheet" type="text/css" />
+<link href="#CHEMIN{css/environnement.css}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="#CHEMIN{css/lightbox.css}" type="text/css" media="screen" />
+
+<!-- Javascript lightbox http://jquery.com/demo/thickbox/ -->
+<script type="text/javascript" src="#CHEMIN{js/lightbox/jquery-latest.js}"></script>
+<script type="text/javascript" src="#CHEMIN{js/lightbox/thickbox.js}"></script>
+<link rel="stylesheet" href="#CHEMIN{css/thickbox.css}" type="text/css" media="screen" />
+
+<!-- Javascript swfobject pour l'intégration de pavés flash -->
+<script type="text/javascript" src="#CHEMIN{js/swfobject.js}"></script>
+
+<!--Javascript calendrier -->
+<script type="text/javascript" src="#CHEMIN{js/horloge.js}"></script>
+
+<!--Javascript lecture flux rss -->
+<script type="text/javascript" src="#CHEMIN{js/rss-reader-laclasse.js}"></script>[(#REM)
+	Head standard de toutes les pages ; les elements specifiques
+	(title, description) figurent dans le squelette article.html
+]
+
+[(#REM)Ajout Erasme]
+#INSERT_HEAD
+
+
+<!--style pour le dossier thematique du secteur energie -->
+<link href="#CHEMIN{css/energie.css}" rel="stylesheet" type="text/css" />
+
+<!-- jScrollpane pour mettre en forme les ascenseurs colonne droite = #secondaire -->
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jquery.dimensions.min.js}"></script>
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jquery.mousewheel.min.js}"></script>
+<script type="text/javascript" src="#CHEMIN{js/jscrollpane/jScrollPane.js}"></script>
+<link rel="stylesheet" href="#CHEMIN{css/jscrollpane/jScrollPane.css}" type="text/css" media="screen" />
+
+<script>
+$(document).ready(function() {
+	
+	$('a.spip_out, a.info_lien_ext, a.pop').attr("title","ouvre une nouvelle fenêtre").click( function() {
+		window.open( $(this).attr('href') );
+		return false;
+	});
+	
+	// jScrollpane = ascenseur customiser
+	$('#secondaire ul').css({ width:'195px' , marginRight:'-20px'}) // pour ascenseur jscrollpane bien en place
+	$(function() {
+		$('#secondaire ul').jScrollPane({
+			showArrows:true
+		});
+	});
+	
+	// ouverture/fermeture des blocs du sous-menu
+	$('ul.sousdossier').css({height:'0'});
+	$('a.dossier').click(function(){
+		
+		if($(this).siblings('div').children('ul.clos').length > 0){
+			$(this).siblings('div').children('ul.sousdossier').stop().animate({height:'120px'},200).addClass('ouvert').removeClass('clos');
+			$(this).parent().siblings('li').children('div').children('ul.ouvert').stop().animate({height:'0'},200).addClass('clos').removeClass('ouvert');
+			return false;
+		};
+		if($(this).siblings('div').children('ul.ouvert').length > 0){
+			$(this).siblings('div').children('ul.sousdossier').stop().animate({height:'0'},200).addClass('clos').removeClass('ouvert');
+			return false;
+		};
+		
+		return false;
+	});
+});
+</script>
+
+
+

@@ -1,0 +1,28 @@
+[(#REM) groupe 3 = groupe des themes ]
+
+	[(#REM) Formulaire recherche]
+	#FORMULAIRE_RECHERCHE
+	
+	[(#REM) Menu de navigation mots-cles ]
+	<B_mots>
+	<div class="liste mots">
+		<ul class="liste-items">
+			<BOUCLE_mots(MOTS) {id_groupe=3} {par titre}>
+			<li class="item"><a href="#URL_MOT" rel="tag">[(#DESCRIPTIF|oui)<strong>]#TITRE[(#DESCRIPTIF|oui)</strong>]</a></li>
+			</BOUCLE_mots>
+		</ul>
+	</div>
+	</B_mots>
+	
+
+	
+	<B_motspara>
+	<div class="liste mots motstexte">
+		<p>
+			<BOUCLE_motspara(MOTS) {id_groupe=3} {par titre}{' &nbsp; '}>
+			<a href="#URL_MOT" rel="tag">[(#DESCRIPTIF|oui)<strong>]#TITRE[(#DESCRIPTIF|oui)</strong>]</a>
+			</BOUCLE_motspara>
+		</p>
+	</div>
+	</B_motspara>
+	

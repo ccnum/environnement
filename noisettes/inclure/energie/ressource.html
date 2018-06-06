@@ -1,0 +1,29 @@
+<BOUCLE_sites(SITES){id_syndic}>
+	<li class="item">
+	    <div class="hierarchie" style="display:none;"><BOUCLE_arianemot(HIERARCHIE){id_rubrique}> &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_arianemot></div>
+
+		<h3><a href="[(#URL_SITE)]" class="spip_out">
+			[<span class="logo_site">(#LOGO_SITE|image_reduire{180,0}|image_recadre{160,0, top left}|image_masque{masque_logo_site.png})</span>]
+			<BOUCLE_picto(MOTS){id_groupe=2}{id_syndic}><span class="logo_picto" style="background-image:url('[(#LOGO_MOT|extraire_attribut{src})]');"></span></BOUCLE_picto>
+			#NOM_SITE
+		</a></h3>
+		#FORMULAIRE_NOTATION
+		<div class="#EDIT{descriptif}">#DESCRIPTIF</div>
+		<B_mots>
+		<div class="ressources">
+			<ul class="themes">
+			<li class="h4">les th&egrave;mes :</li>
+			<BOUCLE_mots(MOTS) {id_groupe=3} {id_syndic} {par titre}{' - '}>
+				<li class="item"><a href="#URL_MOT" rel="tag">#TITRE</a></li>
+			</BOUCLE_mots>
+			</ul>
+
+		</div>
+		</B_mots>
+		[<a href="#site#ID_SYNDIC" class="voir_survol">qui est cet &eacute;diteur ?</a><div class="survol #EDIT{survol}" id="site#ID_SYNDIC">(#SURVOL)</div>]
+		[(#REM)
+		[(#SESSION{statut}|=={0minirezo}|oui) <p class="admin"><a href="#URL_SITE_SPIP/ecrire/?exec=sites&id_syndic=#ID_SYNDIC">modifier cette ressource</a></p> ]
+		]
+		<br class="nettoyeur" />
+</li>
+</BOUCLE_sites>

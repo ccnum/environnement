@@ -1,0 +1,13 @@
+<BOUCLE_rub(RUBRIQUES){racine}{!titre_mot=pas_menu}{par num titre, titre}{tout}>
+	<ul class="niveau1">
+		<li tabindex='0' class="sous-menu [ (#EXPOSE)]" id="item#COMPTEUR_BOUCLE"><a href="#">[(#TITRE|couper{80})]</a>	
+			<B_art>
+				<ul class="niveau2">
+					<BOUCLE_art(ARTICLES){id_rubrique}{par num titre, titre}>
+					<li><a href="#URL_ARTICLE" title="[(#TITRE|couper{80}|attribut_html)]">[(#TITRE|couper{80})]</a></li>
+					</BOUCLE_art>
+				</ul>
+			</B_art>
+		</li>
+	</ul>
+</BOUCLE_rub>

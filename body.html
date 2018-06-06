@@ -1,0 +1,21 @@
+<div id="page" class="page [page(#ID_RUBRIQUE)]">
+	<div id="header">
+		<INCLURE{fond=noisettes/inclure/header,env}>
+	</div>
+	
+	<div id="contenu">	
+		<div id="sous-menu">
+			<INCLURE{fond=noisettes/sous-menu/#ENV{type},env}>
+		</div>
+		<div id="principal">
+			<INCLURE{fond=noisettes/principal/#ENV{type},env,ajax}>
+		</div>		
+		<div id="secondaire">
+			<INCLURE{fond=noisettes/secondaire/#ENV{type},env}>
+		</div>
+		<div style="clear:both;"></div> 
+	</div>
+
+	<INCLURE{fond=noisettes/inclure/footer,env}>
+
+</div>

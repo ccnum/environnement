@@ -1,0 +1,30 @@
+<title>[(#NOM_SITE_SPIP|textebrut)][ - (#TITRE|textebrut)]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<META NAME="Author" CONTENT="Centre Erasme">
+<META NAME="Language" CONTENT="fr">
+<META NAME="Description" CONTENT="Environnement.laclasse.com, Site de ressources culturelles et éducatives du département du Rhône">
+<META NAME="Keywords" CONTENT="espaces naturels sensibles, taxe départementale des espaces naturels sensibles, éducation à l'environnement, observation de la faune et de la flore, domaine forestier départemental, patrimoine forestier, éco-certification, label PEFC, pin Douglas, tempêtes de 1999">
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+[(#REM)Ajout Erasme]
+<meta http-equiv="Content-Type" content="text/html; charset=#CHARSET" />
+<meta name="generator" content="SPIP[ (#SPIP_VERSION)]" />
+[<link rel="alternate" type="application/rss+xml" title="<:syndiquer_site:>" href="(#URL_PAGE{backend})" />]
+#INSERT_HEAD_CSS
+[(#REM)Fin Ajout Erasme]
+
+<!-- Feuilles de style : 1 générale à laclasse, 1 particulière au site en cours, 1 pour le fonctionnement de lightbox -->
+<link href="#CHEMIN{css/laclasse.css}" rel="stylesheet" type="text/css" />
+<link href="#CHEMIN{css/environnement.css}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="#CHEMIN{css/lightbox.css}" type="text/css" media="screen" />
+
+<!-- Javascript swfobject pour l'intégration de pavés flash -->
+<script type="text/javascript" src="#CHEMIN{js/swfobject.js}"></script>
+
+<!--Javascript calendrier -->
+<script type="text/javascript" src="#CHEMIN{js/horloge.js}"></script>
+
+
+[(#REM)Ajout Erasme]
+#INSERT_HEAD

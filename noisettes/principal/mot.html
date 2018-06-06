@@ -1,0 +1,29 @@
+<BOUCLE_contenu(MOTS){id_mot}>
+	
+	[(#REM) Titre]
+		<h1 class="couleur #EDIT{titre}">#TITRE</h1>
+		<B_totalressources>
+		<h2 class="h2">#GRAND_TOTAL <:ressources_sur_ce_theme:></h2>
+		<BOUCLE_totalressources(SITES) {id_mot}> </BOUCLE_totalressources>
+		
+
+	[(#REM) Contenu]
+		<div class="#EDIT{texte}">#TEXTE</div>
+		
+	[(#REM) Sites de la rubrique ]
+	<B_ressources>
+	<div class="liste sites">
+	
+	<ul class="liste-items">
+		<BOUCLE_ressources(SITES) {id_mot} {par nom_site}>
+		
+		<INCLURE{fond=noisettes/inclure/energie/ressource,id_syndic}>
+		
+		</BOUCLE_ressources>
+	</ul>
+	
+	</div>
+	</B_ressources>
+		
+	
+</BOUCLE_contenu>

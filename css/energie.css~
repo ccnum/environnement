@@ -1,0 +1,111 @@
+/****************************************************************/
+/********* mise en forme de la rubrique energie/dossier thematique *********/
+/****************************************************************/
+
+/* styles generaux */
+body { font-size:100%; }
+#page { font-size:.78em; }
+ul { margin:0; padding:8px 0 8px 20px; }
+li { margin:0; padding:0; }
+
+#contenu a, #contenu a:hover { background:none; padding:0; outline:none; color:#6f8e00 /*#8AB800*/; }
+#contenu a:hover { color:#4A5F00; }
+#contenu a.on { font-weight:700; }
+#contenu p { margin:0 0 .5em 0; clear:none; }
+#contenu ul { list-style:none; padding:0; }
+
+/* Espaceur de blocs */
+.nettoyeur { clear: both; height: 0; margin: 0; padding: 0; border: 0; line-height: 1px; font-size: 1px; }
+
+p.pagination { text-align:right; }
+
+
+/* blocs generaux */
+#contenu { background-color:#FFFFFF; padding:15px 0; }
+#principal { float:left; padding:10px 40px 0 20px; width:510px; }
+
+/* contenu */
+#petit-poucet { color:#9f9f9f; }
+h1 { /*font-size:2.5em;*/ }
+h1 .spip_logos { float:right; margin-bottom:1.5em; }
+
+.page9 .chapo { margin:0 0 2em; font-size:110%; font-weight:700; line-height:1.4em; }
+
+
+/* sous-menu = colonne gauche */
+#menu { z-index:100; }
+#sous-menu ul { list-style:none; padding:0; margin:0; }
+#sous-menu li { width:160px; float:none; margin:0 auto 12px auto; text-align:center; position:relative; font-weight:700; background:url('../img/energie/carre-rond_vert.png') top left no-repeat; }
+#sous-menu li a, #sous-menu li a:hover { color:#fff;  padding:.5em .3em .3em; display:block; }
+#sous-menu li a:hover { color:#ddd; }
+#sous-menu li div.angles_h { height:20px; background:url('../img/energie/contour_vert.png') left top no-repeat; }
+#sous-menu li div.angles_b { height:20px; background:url('../img/energie/contour_blanc.png') left bottom no-repeat; }
+#sous-menu li ul.sousdossier, #sous-menu li ul.sousdossieron { /*overflow:auto;*/ height:120px; background:url('../img/energie/contour_blanc.png') left center no-repeat; }
+#sous-menu li li { margin:0; padding:0; background:none; }
+#contenu #sous-menu li ul a, #contenu #sous-menu li ul a:hover { display:block; color:#6f8e00; background:#fff; opacity:.7; padding:.2em .1em; font-weight:700; font-size:1em; }
+#contenu #sous-menu li ul a:hover, #contenu #sous-menu li ul a.on {opacity:1; }
+
+.liste { margin-top:3em; }
+
+
+/* secondaire = colonne droite */
+#secondaire .liste {  margin-bottom:20px; padding:12px 0 12px 6px; background:#d9d9d9 url('../img/energie/angle_h_g.png') left top no-repeat; font-size:.9em; }
+#secondaire h2 { font-size:.8em; margin-top:0; text-transform:uppercase; }
+#secondaire ul { list-style:none; padding:0; height:150px; overflow:auto; }
+#secondaire li {  }
+
+#contenu #secondaire a strong { font-size:120%; }
+#contenu #secondaire a.on { text-decoration:underline; }
+
+#secondaire .liste.motstexte { padding:0 0 12px ; font-size:1em; overflow:hidden; background:#d9d9d9 url('../img/energie/angle_b_g.png') left bottom no-repeat; }
+#secondaire .liste.motstexte p { padding:12px 8px 0; background:#d9d9d9 url('../img/energie/angle_h_g.png') left top no-repeat; }
+
+
+/* page accueil dossier themtaique = rubrique=9
+/* ------------------------------------------------------------ */
+.logosthemes { text-align:center; margin-bottom:1em; }
+.logosthemes img { margin:0 1px; }
+
+
+/* page rubrique-9 + mot-3 = liste des ressources */
+/* -------------------------------------------------------------------- */
+/* liste des sites syndiques */
+/*.page9 #principal ul, .sites ul { list-style:none; padding:0; margin:0; }
+.page9 #principal li { width:160px; float:left; text-align:center; }
+.page9 #principal li a { display:block; }
+.page9 #principal li span { display:block; height:160px; width:160px; }
+.page9 #principal li span span { padding:20px 0; height:120px; background:url('../img/energie/contour_blanc.png') left top no-repeat; overflow:auto; }
+.page9 #contenu #principal li span a, .page9 #contenu #principal li span a:hover { background:#fff; opacity:.5; padding:.3em; text-transform:uppercase; font-weight:700; }
+.page9 #contenu #principal li span a:hover { background:#fff; opacity:.9; padding:.3em; text-transform:uppercase; }*/
+
+.sites li { clear:both;  margin:0 0 20px 0; position:relative; }
+.sites h3 { margin:0; color:#6f8e00 /*#8AB800*/; }
+.sites li .spip_logos { float:none; }
+span.logo_site { float:left; display:block; background:url('../img/energie/logo_site_bord.png') left top no-repeat; width:160px; height:120px; margin:0 6px 4px 0; }
+span.logo_picto { display:block; float:right; width:31px; height:31px; background-position:center top; background-repeat:no-repeat; }
+span.logo_picto:hover, .sites h3:hover span.logo_picto { background-position:center bottom; }
+.hierarchie { margin-bottom:.3em; font-size:.85em; }
+.ressources { clear:both; }
+#contenu ul.themes { padding:1px 0 0; margin:0; }
+#contenu ul.themes li { display:inline; }
+.ressources li.h4 { margin:0; font-size:1em; font-weight:400; padding:2px .3em 0 18px; background:url('../img/energie/rond.png') bottom left no-repeat;  color:#000; }
+
+#contenu #principal ul li a.voir_survol { clear:both; display:block; width:160px; padding:0 0 0 18px; background:url('../img/energie/fleche.png') bottom left no-repeat; }
+#contenu #principal ul li a.voir_survol.ouvert { background:url('../img/energie/fleche.png') top left no-repeat; }
+.survol { display:none; background:#d9d9d9; padding:.5em; border:1px solid #AFAFAF; }
+#contenu a.voir_survol:hover span.survol { display:block; }
+
+p.admin { position:absolute; bottom:0; right:0; padding:0 2px; font-size:.8em; background:#D7D7D7; border:1px solid #AFAFAF; }
+#contenu p.admin a { color:#6f6f6f; }
+#contenu p.admin a:hover { color:#000; }
+
+
+/* surchage de notation.v2.css */
+#contenu #principal div.star-rating a, #contenu #principal div.star-rating-hover a {background:url('../img/energie/img_pack/star.png') no-repeat 0 0px}
+#contenu .critique .titre-note a { font-weight:bold; color:white; background-color:purple ; padding:0 5px 0 5px; margin:0; }
+span.legend { font-size:.85em; font-style:italic; color:#8f8f8f; }
+.formulaire_notation { margin:3px 0;}
+.formulaire_notation form div { display:inline; }
+
+
+

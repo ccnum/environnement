@@ -1,0 +1,16 @@
+<BOUCLE_secteur(RUBRIQUES){id_rubrique=9}>
+	<B_sousrub>
+	<ul>	
+		<BOUCLE_sousrub(RUBRIQUES){id_parent}>
+		<li class="menu#ID_RUBRIQUE">
+		<a href="#URL_RUBRIQUE" class="dossier">#TITRE</a>
+		<div[ style="background:url('(#LOGO_RUBRIQUE|extraire_attribut{src}|url_absolue)') center center no-repeat"]>
+			<div class="angles_h"></div>
+				<B_rubsousrub><ul class="sousdossier[(#EXPOSE)] clos"><BOUCLE_rubsousrub(RUBRIQUES){id_parent}><li><a href="#URL_RUBRIQUE"[ class="(#EXPOSE)"]>#TITRE</a></li></BOUCLE_rubsousrub></ul></B_rubsousrub>
+			<div class="angles_b"></div>
+		</div>
+		</li>
+		</BOUCLE_sousrub>
+	</ul>	
+	</B_sousrub>
+</BOUCLE_secteur>

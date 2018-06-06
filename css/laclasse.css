@@ -1,0 +1,767 @@
+/*********************************************************************************************/
+/********* Propriétés générales **************************************************************/
+/********* pour les propriétés spécifiques à chaque site (couleur et images de fond) *********/
+/********* se reporter aux feuilles de style spécifiques *************************************/
+/*********************************************************************************************/
+
+body {
+	/*margin: 10px 0 20px 0;*/
+	background-color:#C5C5C5;
+	color:#333333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:15px;
+	margin: 0; /* pour eviter les marges */ 
+	text-align: center; /* pour corriger le bug de centrage IE */ 
+}
+
+#page {
+	/* Centrage horizontal de la page */
+	margin: 10px auto 20px auto; 
+	text-align: left;
+	width:950px;
+	
+}
+
+img {
+	border: 0;
+}
+
+
+a {
+	color:#333333;
+}
+
+p {
+	clear:both;
+}
+
+.legende {
+	font-size:11px;
+	line-height:13px;
+	font-style:italic;
+}
+
+h1 {
+	font-size:24px;
+	line-height:26px;
+	margin-top:10px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+	clear:both;
+}
+
+h3 {
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+}
+
+h4 {
+	font-size:11px;
+	line-height:13px;
+	font-weight:bold;
+}
+
+input {
+	font-size:11px;
+}
+
+ul {
+	margin: 0 0 25px 18px;
+	padding: 0 0 0 0;
+	list-style:disc;
+}
+ul.sans-tiret {
+	margin: 0 0 0px 18px;
+	padding: 0 0 0 0;
+	list-style:none;
+}
+li {
+	margin-bottom: 10px;
+}
+
+.tableau {
+	margin:10px 0 10px 0;
+}
+
+table {
+	border:1px;
+	padding:0px;
+}
+
+th { /* La couleur de fond du th est définie dans la css spécifique à chaque site */
+	font-weight:bold;
+	padding:5px 5px 20px 5px;
+}
+
+tr {
+	padding:5px 5px 3px 5px;
+}
+
+td {
+	padding:5px 5px 3px 5px;
+}
+
+hr {
+	height: 1px;
+	margin: 15px 0 15px 0;
+	padding: 0;
+	border: 0;
+}
+
+/**************************/
+/********* Header *********/
+/**************************/
+
+#header {
+}
+
+#chemin1{
+	height:22px;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 8px 0 8px;
+	margin-right:2px;
+	background-color:#000000;
+	line-height:5px;
+}
+
+#chemin2{
+	height:22px;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 8px 0 8px;
+	margin-right:2px;
+	background-color:#000000;
+	line-height:5px;
+}
+
+#chemin3{
+	height:22px;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 8px 0 8px;
+	background-color:#000000;
+	line-height:5px;
+}
+
+#chemin1 a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#chemin2 a {
+	color:#CCCCCC;
+	text-decoration:none;
+}
+
+#chemin3 a {
+	color:#999999;
+	text-decoration:none;
+}
+
+#login{
+	float:right;
+	margin-top:5px;
+}
+
+#bandeau {
+	width: 950px;
+	height:140px;
+	background-color:#FFFFFF;
+}
+
+#logo {
+	float:left;
+	width:190px;
+	text-align:center;
+	margin-top:20px;
+}
+
+#image {
+	float:left;
+	height:140px;
+}
+
+#calendrier{
+	background-color:#F2F2F2;
+	float: left;
+}
+
+#contenu-calendrier {
+	width:175px;
+	height: 125px;
+	margin: 15px 0 0 15px;
+}
+
+ #contenu-calendrier .jour-mois-annee {
+	font-weight:bold;
+	font-size:14px;
+}
+
+#contenu-calendrier #numero-jour {
+	font-weight:bold;
+	font-size:70px;
+	line-height:72px;
+	margin: 0 0 -6px 0;
+}
+
+#menu {
+	clear:both;
+	height:25px;
+	position:relative;
+}
+
+#menu a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+#menu ul {
+	width:190px;
+	float:left;
+	list-style:none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#menu ul.niveau1 li.sous-menu a {
+	margin-left:16px;
+	padding-left:16px;
+	line-height:25px;
+}
+
+#item1{
+	position: absolute;
+
+}
+#item1 ul.niveau2 {
+	margin: 0 0 0 0;
+	padding: 10px 0 12px 0;
+	display:none;
+	z-index:100;
+	top:35px;
+}
+
+#item1:hover {
+	margin: 0 0 0 0;
+	width: 190px;
+	top: -10px;
+	position: absolute;
+	line-height:26px;
+	padding-top: 9px;
+}
+
+#item1:hover  ul.niveau2 { 
+    display:block;
+}
+
+#item2{
+	position: absolute;
+	left: 190px;
+}
+
+#item2 ul.niveau2 {
+	margin: 0 0 0 0;
+	padding: 10px 0 12px 0;
+	display:none;
+	z-index:100;
+	top:35px;
+}
+
+#item2:hover {
+	margin: 0 0 0 0;
+	width: 190px;
+	top: -10px;
+	position: absolute;
+	line-height:26px;
+	padding-top: 9px;
+}
+
+#item2:hover  ul.niveau2 { 
+    display:block;
+}
+
+#item3{
+	position: absolute;
+	left: 380px;
+}
+
+#item3 ul.niveau2 {
+	margin: 0 0 0 0;
+	padding: 10px 0 12px 0;
+	display:none;
+	z-index:100;
+	top:35px;	
+}
+
+#item3:hover {
+	margin: 0 0 0 0;
+	width: 190px;
+	top: -10px;
+	position: absolute;
+	line-height:26px;
+	padding-top: 9px;
+}
+
+#item3:hover  ul.niveau2 { 
+    display:block;
+}
+
+#item4{
+	position: absolute;
+	left: 570px;
+}
+
+#item4 ul.niveau2 {
+	margin: 0 0 0 0;
+	padding: 10px 0 12px 0;
+	display:none;
+	z-index:100;
+	top:35px;
+}
+
+#item4:hover {
+	margin: 0 0 0 0;
+	width: 190px;
+	top: -10px;
+	position: absolute;
+	line-height:26px;
+	padding-top: 9px;
+}
+
+#item4:hover  ul.niveau2 { 
+    display:block;
+}
+
+#menu ul.niveau1 ul.niveau2 li {
+	padding: 0 0 0 0;
+	margin: 8px 0 8px 14px;
+	line-height:15px;
+}
+
+#menu ul.niveau1 ul.niveau2 li a {
+	line-height:14px;
+	display:block;
+}
+
+#menu ul.niveau1 ul.niveau2 li a:hover {
+	color:#333333;
+}
+
+#menu ul.niveau1 ul.niveau2 li a {
+	background:none;
+	padding:0;
+}
+
+#menu ul.niveau1 ul.niveau2 li a:hover {
+	background:none;
+}
+
+
+/***************************/
+/********* Contenu *********/
+/***************************/
+/*
+Le contenu est habituellement composé comme suit :
+ - 1 colonne "sous-menu" à gauche pour la navigation dans la rubrique en cours
+- 1 colonne "principal" centrale pour le contenu
+- 1 colonne "secondaire" pour la boîte à outil de la rubrique en cours
+
+Dans le cas d'un besoin de plus grande largeur pour le contenu, 2 styles sont disponibles :
+- principal-2col où on supprime la dernière colonne "secondaire" pour un contenu plus large
+- principal-3col où le contenu prend toute la largeur
+*/
+/***************************/
+
+#contenu {
+	padding:25px 0 25px 0;
+	background-color:#FFFFFF;
+	
+}
+
+#sous-menu {
+	float:left;
+	width:190px;
+}
+
+#principal {
+	padding:10px 20px 0 20px;
+	float:left;
+	width:530px;
+}
+
+#principal-2col {
+	padding:10px 20px 0 20px;
+	float:left;
+	width:720px;
+}
+
+#principal-3col {
+	padding:10px 20px 0 20px;
+	float:left;
+	width:910px;
+}
+
+#secondaire {
+	float:left;
+	width:190px;
+}
+
+#contenu p {
+	margin-top:0px;
+}
+
+#contenu a {
+	color:#333333;
+	padding-left:16px;
+	/*display:block;*/
+	text-decoration:none;
+}
+
+#contenu a.lientexte {
+	color:#333333;
+	padding:0;
+	background:none;
+	text-decoration:underline;
+}
+
+#contenu a.lientexte-sans-souligne {
+	color:#333333;
+	padding:0;
+	background:none;
+	text-decoration:none;
+}
+
+#contenu a:hover {
+	padding-left:16px;
+}
+
+/* 3 mises en forme de contenu possibles : */
+/* contenu1col pour les contenus de largeur 1 colonne */
+/* contenu2cols pour les contenus de largeur 2 colonnes */
+/* contenu1-5col pour les contenus de largeur 1,5 colonne */
+/* Il suffit ensuite de combiner la classe avec la classe gauche ou droite pour définir
+/* la position du bloc de contenu */
+/* Avec la classe gauchebis, on peut également enchaîner sur la même ligne 2 blocs  de n'importe quelle largeur */
+
+.contenu1col {
+	width:170px;
+}
+
+.contenu1-5col {
+	width:250px;
+}
+
+.contenu2col {
+	width:340px;
+}
+
+.gauche {
+	clear:both;
+	float:left;
+}
+
+.gauche-bis {
+	float:left;
+}
+
+.droite {
+	float:right;
+}
+
+.contenu1col img {
+	width:170px;
+	margin-bottom:20px;
+}
+
+.contenu1-5col img {
+	width:250px;
+	margin-bottom:20px;
+}
+
+.contenu2col img {
+	width:340px;
+	margin-bottom:20px;
+}
+
+
+
+.bloc {
+	background-color:#F2F2F2;
+	padding-bottom:10px;
+	margin-bottom:20px;
+}
+
+.bloc p {
+	font-size:12px;
+	line-height:13px;
+	padding:0 15px 0 15px;
+}
+
+.bloc a {
+	min-height:15px;
+}
+
+.bloc .colonne1 {
+	font-size:11px;
+	clear:both;
+	float:left;
+	width:90px;
+	padding:0 5px 0 15px;
+}
+.bloc .colonne2 {
+	font-size:11px;
+	float:right;
+	padding-right:20px;
+}
+
+
+a.lienimage {
+	padding:0;
+	background:none;
+}
+
+.bloc h3 {
+	padding:10px 15px 10px 15px;
+	margin:0;
+}
+
+.bloc h4 {
+	padding:10px 15px 0 15px;
+	margin:0;
+}
+
+.auteur {
+	font-style:italic;
+	color:#888888;
+}
+
+#sous-menu .titre {
+	background:#D9D9D9 url(../img/haut-pave-contenu-sous-menu.gif) no-repeat;
+}
+
+#sous-menu .contenu-special {
+	margin:10px 15px 0 15px;
+}
+
+#secondaire .titre {
+	background:#D9D9D9 url(../img/haut-pave-contenu-secondaire.gif) no-repeat;
+}
+
+.pub {
+	padding-top:10px;
+	text-align:center;
+	background:url(../img/haut-pave-contenu-pub.gif) no-repeat;
+}
+
+#sous-menu #sous-navigation {
+	/*padding-top:25px;*/
+}
+
+#sous-menu #sous-navigation .titre {
+	color:#ffffff;
+	background: url(../img/haut-pave-sous-menu.gif) no-repeat;
+	padding-bottom:10px;
+}
+
+#lien-fermer a {
+	color:#333333;
+	padding-left:16px;
+	display:block;
+	text-decoration:none;
+}
+
+#lien-fermer a:hover {
+	padding-left:16px;
+}
+
+/**************************/
+/********* Footer *********/
+/**************************/
+
+#footer {
+	clear:both;
+	text-align:right;
+	padding-right:15px;
+	top:-28px;
+	font-size:11px;
+	position:relative;
+}
+
+#rhone {
+	clear:both;
+	text-align:center;
+	margin-bottom:15px;
+}
+
+
+
+/*******************************************/
+/********* Module authentification *********/
+/*******************************************/
+
+.bloc-authentification {
+	width:300px;
+	float:left;
+	margin:20px 0px 0 20px;
+	text-align: left; 
+}
+
+#bloc-identifiant-motdepasse {
+	padding:10px 20px 25px 20px;
+	width:280px;
+	margin-bottom:20px;
+}
+
+
+#bloc-identifiant-motdepasse .intitules {
+	float:left;
+	width:80px;
+	margin-right:20px;
+	margin-bottom:12px;
+}
+
+#bloc-identifiant-motdepasse .champs {
+	float:left;
+}
+
+/*******************************/
+/********* Formulaires *********/
+/*******************************/
+
+.formulaire {
+	clear:both;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.formulaire .intitules {
+	clear:both;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	width:32%;
+	font-weight:bold;
+}
+
+.formulaire .champs {
+	width:60%;
+	float:left;
+	margin-bottom:20px;
+}
+
+.formulaire .aide {
+	width:18px;
+	float:left;
+}
+
+
+/*******************************/
+/********* Info-bulle *********/
+/*******************************/
+
+a.info-bulle {
+    position:relative; 
+    z-index:250;
+	background-color:#D8D8D8;
+    color:#000000;
+    text-decoration:none;
+}
+
+a.info-bulle:hover {
+	z-index:251;
+	background-color:#FFFF00;
+}
+
+a.info-bulle span {
+	display: none;
+}
+
+/*le contenu de la balise span ne sera visible que pour l'état a:hover */
+a.info-bulle:hover span { 
+	display:block; 
+	position:absolute;    
+    top:10px; left:-215px; width:190px;
+    border:1px solid #000000;
+    background-color:#eeeeee;
+	color:#000000;
+	font-size:11px;
+	line-height:12px;
+	font-style:italic;
+    padding:10px;  
+}
+
+
+/****************************************************/
+/********* gestion contenu dans la thickbox *********/
+/****************************************************/
+
+#contenu-thickbox {
+    text-align:left;
+	padding:20px 20px 20px 20px;
+}
+
+
+/***********************************/
+/********* cahier de texte *********/
+/***********************************/
+
+.bloc-cahier-texte-cours {
+	padding:15px;
+	width:40%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.bloc-cahier-texte-fleche {
+	margin-top:10px;
+	width:3%;
+	float:left;
+}
+
+.bloc-cahier-texte-travail {
+	padding:15px;
+	width:40%;
+	float:right;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.bloc-cahier-texte-outils {
+	clear:both;
+	float:right;
+	text-align:right;
+	margin-bottom:5px;
+}
+
+
+/******************************/
+/********* calendrier *********/
+/******************************/
+
+.calendrier {
+	padding:0 15px 0 15px;
+}
+.calendrier table {
+padding:0px;
+}
+.calendrier tr {
+padding:2px;
+}
+.calendrier th {
+padding:2px;
+}
+.calendrier td {
+padding:2px;
+}

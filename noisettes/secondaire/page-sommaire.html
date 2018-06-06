@@ -1,0 +1,21 @@
+#FORMULAIRE_RECHERCHE
+
+<BOUCLE_site(SITES){id_syndic=100}>
+	<div class="bloc">
+	<div class="titre">
+	  <h3>Actualités<a href="#URL_SYNDIC" target="_blank" title="Afficher le flux Rss des actualités de laclasse.com" class="lientexte">
+	  <img src="#CHEMIN{img/picto_rss.gif}" alt="rss" width="14" height="14" style="float:right;"/></a><br />
+	</div>
+
+	<BOUCLE_syndic(SYNDIC_ARTICLES) {id_syndic} {par date} {inverse} {0,4}>
+		<a><h4 class="couleur">#TITRE</h4></a>
+		<p>
+		[(#DESCRIPTIF|replace{&amp;,})]
+		</p>
+		<p>
+		<a href="#URL_ARTICLE"[ title="(#NOM_SITE|attribut_html|couper{80})"] class="spip_out">Lire la suite</a>
+		</p>	
+	</BOUCLE_syndic>
+
+	</div>
+</BOUCLE_site>
